@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/saudacaoTextView"
-        android:text="Hello World"
+        android:text="@string/saudacao_inicial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
