@@ -34,8 +34,11 @@ public class MainActivity extends Activity {
 
     public void surpreenderUsuario(View v) {
         Editable texto = this.nomeEditText.getText();
-        this.saudacaoTextView.setText(texto);
 
+        Intent intent = new Intent(SaudacaoActivity.ACAO_EXIBIR_SAUDACAO);
+        intent.addCategory(SaudacaoActivity.CATEGORIA_EXIBIR_SAUDACAO);
+        intent.putExtra(SaudacaoActivity.EXTRA_NOME_USUARIO, texto.toString());
+        startActivity(intent);
     }
 
     public void abrirNavegador(View v) {

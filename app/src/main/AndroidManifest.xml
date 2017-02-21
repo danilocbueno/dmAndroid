@@ -15,6 +15,14 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".SaudacaoActivity">
+            <intent-filter>
+                <action android:name="tmandroid.ACAO_EXIBIR_SAUDACAO"/>
+                <category android:name="tmandroid.CATEGORIA_EXIBIR_SAUDACAO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
