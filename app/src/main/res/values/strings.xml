@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">tmAndroid</string>
+    <string name="saudacao_inicial">saudacaoTextView</string>
+    <string name="botao_abrir_navegador">Abrir Navegador</string>
 </resources>
