@@ -32,6 +32,12 @@ public class ViagemCadastroActivity extends Activity {
         this.helper = new DatabaseHelper(this);
     }
 
+    @Override
+    protected void onDestroy() {
+        helper.close();
+        super.onDestroy();
+    }
+
     public void cadastrarViagem(View v) {
 
         SQLiteDatabase db = this.helper.getWritableDatabase();
